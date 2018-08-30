@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>News</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<link href='https://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- animation-effect -->
+<link href="css/animate.min.css" rel="stylesheet"> 
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+	
+<body>
+	
+<!-- banner -->
+	<div class="banner1">
+		<div class="container">
+			<div class="banner-main">
+				<div class="banner-main1">
+					<div class="logo animated wow slideInLeft" data-wow-delay=".5s">
+						<h1><a href="index.html">Fleece<span>sheep farm</span></a></h1>
+					</div>
+					<div class="search animated wow slideInLeft" data-wow-delay=".7s">
+						<form>
+							<input type="text" value="Search Here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Here...';}" required="">
+							<input type="submit" value=" ">
+							<div class="clearfix"> </div>
+						</form>
+					</div>
+					<div class="header-right">
+						<div class="shy-menu">
+							<a class="shy-menu-hamburger">
+								<span class="layer top"></span>
+								<span class="layer mid"></span>
+								<span class="layer btm"></span>
+							</a>
+							<div class="shy-menu-panel">
+								<nav class="menu menu--horatio">
+									<ul class="menu__list">
+										<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+										<li class="menu__item"><a href="about.html" class="menu__link">About</a></li> 
+										<li class="menu__item"><a href="short-codes.html" class="menu__link">Short Codes</a></li> 
+										<li class="menu__item menu__item--current"><a href="news.html" class="menu__link">News</a></li>
+										<li class="menu__item"><a href="gallery.html" class="menu__link">Gallery</a></li> 
+										<li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="menu open">
+						  <a class="hamburger">
+							<span class="layer top"></span>
+							<span class="layer mid"></span>
+							<span class="layer btm"></span>
+						  </a>
+						</div>
+						<script>
+							$(function() {
+								
+								initDropDowns($("div.shy-menu"));
+
+							});
+
+							function initDropDowns(allMenus) {
+
+								allMenus.children(".shy-menu-hamburger").on("click", function() {
+									
+									var thisTrigger = jQuery(this),
+										thisMenu = thisTrigger.parent(),
+										thisPanel = thisTrigger.next();
+
+									if (thisMenu.hasClass("is-open")) {
+
+										thisMenu.removeClass("is-open");
+
+									} else {			
+										
+										allMenus.removeClass("is-open");	
+										thisMenu.addClass("is-open");
+										thisPanel.on("click", function(e) {
+											e.stopPropagation();
+										});
+									}
+									
+									return false;
+								});
+							}
+						</script>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="banner1-info animated wow zoomIn" data-wow-delay=".5s">
+					<h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+						deserunt mollit.</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- banner -->
+<!-- events -->
+	<div class="events">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay=".5s">Sheep Farm <span>News & Events</span></h3>
+			<div class="events-grids">
+				<div class="col-md-8 event-left">
+					<div class="event-left1">
+						<div class="col-xs-6 event-left1-left animated wow slideInLeft" data-wow-delay=".5s">
+							<a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
+							<div class="event-left1-left-pos">
+								<ul>
+									<li><a href="#"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>5 Tags</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>200 Likes</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Leo Paul</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-6 event-left1-right animated wow slideInRight" data-wow-delay=".5s">
+							<h4>25th / march 2016</h4>
+							<h5><a href="single.html">consectetur adipiscing elit, sed do eiusmod</a></h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="event-left1">
+						<div class="col-xs-6 event-left1-right event-left1-right-dummy animated wow slideInLeft" data-wow-delay=".5s">
+							<h4>28th / march 2016</h4>
+							<h5><a href="single.html">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a></h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="col-xs-6 event-left1-left animated wow slideInRight" data-wow-delay=".5s">
+							<a href="single.html"><img src="images/2.jpg" alt=" " class="img-responsive" /></a>
+							<div class="event-left1-left-pos">
+								<ul>
+									<li><a href="#"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>5 Tags</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>200 Likes</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Leo Paul</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="event-left1">
+						<div class="col-xs-6 event-left1-left animated wow slideInLeft" data-wow-delay=".5s">
+							<a href="single.html"><img src="images/8.jpg" alt=" " class="img-responsive" /></a>
+							<div class="event-left1-left-pos">
+								<ul>
+									<li><a href="#"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>5 Tags</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>200 Likes</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Leo Paul</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-6 event-left1-right animated wow slideInRight" data-wow-delay=".5s">
+							<h4>25th / march 2016</h4>
+							<h5><a href="single.html">Neque porro quisquam est, qui dolorem ipsum quia dolor</a></h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="event-left1">
+						<div class="col-xs-6 event-left1-right event-left1-right-dummy animated wow slideInLeft" data-wow-delay=".5s">
+							<h4>28th / march 2016</h4>
+							<h5><a href="single.html">Quis autem vel eum iure ea voluptate velit esse quam</a></h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="col-xs-6 event-left1-left animated wow slideInRight" data-wow-delay=".5s">
+							<a href="single.html"><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
+							<div class="event-left1-left-pos">
+								<ul>
+									<li><a href="#"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>5 Tags</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>200 Likes</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Leo Paul</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<nav class="paging1 animated wow slideInUp" data-wow-delay=".5s">
+					  <ul class="pagination paging">
+						<li>
+						  <a href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						  </a>
+						</li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>
+						  <a href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						  </a>
+						</li>
+					  </ul>
+					</nav>
+				</div>
+				<div class="col-md-4 event-right">
+					<div class="event-right1">
+					<div class="search1 animated wow slideInUp" data-wow-delay=".5s">
+						<form>
+							<input type="text" value="Search Here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Here...';}" required="">
+							<input type="submit" value="Send">
+						</form>
+					</div>
+					<div class="categories animated wow slideInUp" data-wow-delay=".5s">
+						<h3>Categories</h3>
+						<ul>
+							<li><a href="single.html">At vero eos et accusamus et iusto</a></li>
+							<li><a href="single.html">Sed ut perspiciatis unde omnis iste</a></li>
+							<li><a href="single.html">Accusantium doloremque laudantium</a></li>
+							<li><a href="single.html">Vel illum qui dolorem eum fugiat quo</a></li>
+							<li><a href="single.html">Quis autem vel eum iure reprehenderit</a></li>
+							<li><a href="single.html">Neque porro quisquam est, qui dolorem</a></li>
+						</ul>
+					</div>
+					<div class="posts animated wow slideInUp" data-wow-delay=".5s">
+						<h3>Blog Posts</h3>
+						<div class="posts-grids">
+							<div class="posts-grid">
+								<div class="posts-grid-left">
+									<a href="single.html"><img src="images/10.jpg" alt=" " class="img-responsive" /></a>
+								</div>
+								<div class="posts-grid-right">
+									<h4><a href="single.html">Sed ut perspiciatis unde omnis iste natus</a></h4>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="posts-grid">
+								<div class="posts-grid-left">
+									<a href="single.html"><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
+								</div>
+								<div class="posts-grid-right">
+									<h4><a href="single.html">Neque porro quisquam est, qui dolorem</a></h4>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="posts-grid">
+								<div class="posts-grid-left">
+									<a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
+								</div>
+								<div class="posts-grid-right">
+									<h4><a href="single.html">Nemo enim ipsam voluptatem quia</a></h4>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="tags tags1 animated wow slideInUp" data-wow-delay=".5s">
+						<h3>Recent Tags</h3>
+						<ul>
+							<li><a href="single.html">Themes</a></li>
+							<li><a href="single.html">Growth</a></li>
+							<li><a href="single.html">Farming</a></li>
+							<li><a href="single.html">Price</a></li>
+							<li><a href="single.html">Wool</a></li>
+							<li><a href="single.html">Design</a></li>
+							<li><a href="single.html">Category</a></li>
+							<li><a href="single.html">Themes</a></li>
+							<li><a href="single.html">Growth</a></li>
+							<li><a href="single.html">Farming</a></li>
+							<li><a href="single.html">Price</a></li>
+							<li><a href="single.html">Wool</a></li>
+							<li><a href="single.html">Design</a></li>
+							<li><a href="single.html">Category</a></li>
+						</ul>
+					</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //events -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".5s">
+				<h2><a href="index.html">Fleece<span>sheep farm</span></a></h2>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+					nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+					deserunt mollit anim id est laborum.</p>
+				<ul class="social">
+					<li>Share on:</li>
+					<li><a class="social-linkedin" href="#">
+						<i></i>
+						<div class="tooltip"><span>Facebook</span></div>
+						</a></li>
+					<li><a class="social-twitter" href="#">
+						<i></i>
+						<div class="tooltip"><span>Twitter</span></div>
+						</a></li>
+					<li><a class="social-google" href="#">
+						<i></i>
+						<div class="tooltip"><span>Google+</span></div>
+						</a></li>
+					<li><a class="social-facebook" href="#">
+						<i></i>
+						<div class="tooltip"><span>Pinterest</span></div>
+						</a></li>
+					<li><a class="social-instagram" href="#">
+						<i></i>
+						<div class="tooltip"><span>Instagram</span></div>
+						</a></li>
+				</ul>
+				<div class="newsletter">
+					<form>
+						<input type="email" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}" required="">
+						<input type="submit" value="Subscribe">
+					</form>
+				</div>
+			</div>
+			<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".6s">
+				<h3>instagram posts</h3>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/8.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/10.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/11.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/12.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/8.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/10.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".7s">
+				<h3>Contact Info</h3>
+				<ul class="footer-address">
+					<li><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 738 Diamond Road, New York City, USA.</li>
+					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li>
+					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7683 928 829</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="footer-copy">
+		<div class="container">
+			<p class="animated wow slideInLeft" data-wow-delay=".5s">Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

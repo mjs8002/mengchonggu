@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<link href='https://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- animation-effect -->
+<link href="css/animate.min.css" rel="stylesheet"> 
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+	
+<body>
+	
+<!-- banner -->
+	<div class="banner1">
+		<div class="container">
+			<div class="banner-main">
+				<div class="banner-main1">
+					<div class="logo animated wow slideInLeft" data-wow-delay=".5s">
+						<h1><a href="index.html">Fleece<span>sheep farm</span></a></h1>
+					</div>
+					<div class="search animated wow slideInLeft" data-wow-delay=".7s">
+						<form>
+							<input type="text" value="Search Here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Here...';}" required="">
+							<input type="submit" value=" ">
+							<div class="clearfix"> </div>
+						</form>
+					</div>
+					<div class="header-right">
+						<div class="shy-menu">
+							<a class="shy-menu-hamburger">
+								<span class="layer top"></span>
+								<span class="layer mid"></span>
+								<span class="layer btm"></span>
+							</a>
+							<div class="shy-menu-panel">
+								<nav class="menu menu--horatio">
+									<ul class="menu__list">
+										<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+										<li class="menu__item menu__item--current"><a href="about.html" class="menu__link">About</a></li> 
+										<li class="menu__item"><a href="short-codes.html" class="menu__link">Short Codes</a></li> 
+										<li class="menu__item"><a href="news.html" class="menu__link">News</a></li>
+										<li class="menu__item"><a href="gallery.html" class="menu__link">Gallery</a></li> 
+										<li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="menu open">
+						  <a class="hamburger">
+							<span class="layer top"></span>
+							<span class="layer mid"></span>
+							<span class="layer btm"></span>
+						  </a>
+						</div>
+						<script>
+							$(function() {
+								
+								initDropDowns($("div.shy-menu"));
+
+							});
+
+							function initDropDowns(allMenus) {
+
+								allMenus.children(".shy-menu-hamburger").on("click", function() {
+									
+									var thisTrigger = jQuery(this),
+										thisMenu = thisTrigger.parent(),
+										thisPanel = thisTrigger.next();
+
+									if (thisMenu.hasClass("is-open")) {
+
+										thisMenu.removeClass("is-open");
+
+									} else {			
+										
+										allMenus.removeClass("is-open");	
+										thisMenu.addClass("is-open");
+										thisPanel.on("click", function(e) {
+											e.stopPropagation();
+										});
+									}
+									
+									return false;
+								});
+							}
+						</script>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="banner1-info animated wow zoomIn" data-wow-delay=".5s">
+					<h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+						deserunt mollit.</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- banner -->
+<!-- about -->
+	<div class="about">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay=".5s">About <span>Sheep Farm</span></h3>
+			<div class="about-grids">
+				<div class="col-xs-3 tab-grid-left animated wow slideInLeft" data-wow-delay=".5s"> <!-- required for floating -->
+					<!-- Nav tabs -->
+					 <ul class="nav nav-tabs">
+						<li class="active"><a href="#Tab1" data-toggle="tab">dignissimos ducimus</a></li>
+						<li><a href="#Tab2" data-toggle="tab">accusam etiustomos</a></li>
+						<li><a href="#Tab3" data-toggle="tab">odioetim accusamus</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-9 tab-grid-right animated wow slideInRight" data-wow-delay=".5s">
+					<!-- Tab panes -->
+					<div class="tab-content tab-content-sub">
+						<div class="tab-pane active" id="Tab1">
+							<div class="text">
+								<div class="col-md-4 text-left">
+									<img src="images/1.jpg" alt=" " class="img-responsive" />
+								</div>
+								<div class="col-md-8 text-right">
+									<h4>tenetur a sapiente delectus</h4>
+									<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut 
+										fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
+										sequi nesciunt.</p>
+									<ul>
+										<li>consequuntur magni dolores eos</li>
+										<li>magnam aliquam quaerat voluptatem</li>
+										<li>aliquid ex ea commodi consequatur</li>
+										<li>voluptatem quia voluptas sit</li>
+									</ul>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="tab-pane" id="Tab2">
+							<div class="text">
+								<div class="col-md-8 text-right">
+									<h4>sed quia consequuntur magni</h4>
+									<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut 
+										fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
+										sequi nesciunt.</p>
+									<ul>
+										<li>consequuntur magni dolores eos</li>
+										<li>magnam aliquam quaerat voluptatem</li>
+										<li>aliquid ex ea commodi consequatur</li>
+										<li>voluptatem quia voluptas sit</li>
+									</ul>
+								</div>
+								<div class="col-md-4 text-left">
+									<img src="images/15.jpg" alt=" " class="img-responsive" />
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="tab-pane" id="Tab3">
+							<div class="text">
+								<div class="col-md-4 text-left">
+									<img src="images/16.jpg" alt=" " class="img-responsive" />
+								</div>
+								<div class="col-md-8 text-right">
+									<h4>dolores eos qui ratione voluptatem</h4>
+									<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut 
+										fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
+										sequi nesciunt.</p>
+									<ul>
+										<li>consequuntur magni dolores eos</li>
+										<li>magnam aliquam quaerat voluptatem</li>
+										<li>aliquid ex ea commodi consequatur</li>
+										<li>voluptatem quia voluptas sit</li>
+									</ul>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //about -->
+<!-- about-bottom1 -->
+	<div class="about-bottom1">
+		<div class="container">
+			<div class="col-md-7 about-bottom1-left animated wow slideInLeft" data-wow-delay=".5s">
+				<h3>voluptatem quia voluptas sit aspernatur aut</h3>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+					sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+					Neque porro quisquam est, qui dolorem ipsum quia.</p>
+				<div class="about-bottom1-left-grids">
+					<div class="about-bottom1-left-grid">
+						<div class="about-bottom1-right-grid">
+							<img src="images/6.jpg" alt=" " class="img-responsive" />
+						</div>
+					</div>
+					<div class="about-bottom1-left-grid">
+						<div class="about-bottom1-right-grid">
+							<img src="images/7.jpg" alt=" " class="img-responsive" />
+						</div>
+					</div>
+					<div class="about-bottom1-left-grid">
+						<div class="about-bottom1-right-grid">
+							<img src="images/8.jpg" alt=" " class="img-responsive" />
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="col-md-5 about-bottom1-right">
+				<h3>Quis autem vel eum iure repreh enderit</h3>
+				<div class='bar_group'>
+					<div class='bar_group__bar thin' label='Rating' show_values='true' tooltip='true' value='343'></div>
+					<div class='bar_group__bar thin' label='Quality' show_values='true' tooltip='true' value='235'></div>
+					<div class='bar_group__bar thin' label='Amount' show_values='true' tooltip='true' value='675'></div>
+					<div class='bar_group__bar thin' label='Farming' show_values='true' tooltip='true' value='456'></div>
+				</div>
+				<script src="js/bars.js"></script>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- about-bottom1 -->
+<!-- about-bottom -->
+	<div class="about-bottom">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay=".5s">Meet Our<span>Team</span></h3>
+			<div class="about-bottom-grids">
+				<div class="col-md-3 about-bottom-grid animated wow slideInLeft" data-wow-delay=".5s">
+					<div class="about-bottom-grid1">
+						<img src="images/2.png" alt=" " class="img-responsive" />
+						<h4>Laura Allen</h4>
+						<p>Voluptas sit consequuntur magni dolores magnam aliquam quaerat.</p>
+						<ul class="social">
+							<li><a class="social-linkedin" href="#">
+								<i></i>
+								<div class="tooltip"><span>Facebook</span></div>
+								</a></li>
+							<li><a class="social-twitter" href="#">
+								<i></i>
+								<div class="tooltip"><span>Twitter</span></div>
+								</a></li>
+							<li><a class="social-google" href="#">
+								<i></i>
+								<div class="tooltip"><span>Google+</span></div>
+								</a></li>
+						</ul>
+ 					</div>
+				</div>
+				<div class="col-md-3 about-bottom-grid animated wow slideInLeft" data-wow-delay=".6s">
+					<div class="about-bottom-grid1">
+						<img src="images/3.png" alt=" " class="img-responsive" />
+						<h4>Chris Won</h4>
+						<p>Voluptas sit consequuntur magni dolores magnam aliquam quaerat.</p>
+						<ul class="social">
+							<li><a class="social-linkedin" href="#">
+								<i></i>
+								<div class="tooltip"><span>Facebook</span></div>
+								</a></li>
+							<li><a class="social-twitter" href="#">
+								<i></i>
+								<div class="tooltip"><span>Twitter</span></div>
+								</a></li>
+							<li><a class="social-google" href="#">
+								<i></i>
+								<div class="tooltip"><span>Google+</span></div>
+								</a></li>
+						</ul>
+ 					</div>
+				</div>
+				<div class="col-md-3 about-bottom-grid animated wow slideInLeft" data-wow-delay=".7s">
+					<div class="about-bottom-grid1">
+						<img src="images/4.png" alt=" " class="img-responsive" />
+						<h4>James Alley</h4>
+						<p>Voluptas sit consequuntur magni dolores magnam aliquam quaerat.</p>
+						<ul class="social">
+							<li><a class="social-linkedin" href="#">
+								<i></i>
+								<div class="tooltip"><span>Facebook</span></div>
+								</a></li>
+							<li><a class="social-twitter" href="#">
+								<i></i>
+								<div class="tooltip"><span>Twitter</span></div>
+								</a></li>
+							<li><a class="social-google" href="#">
+								<i></i>
+								<div class="tooltip"><span>Google+</span></div>
+								</a></li>
+						</ul>
+ 					</div>
+				</div>
+				<div class="col-md-3 about-bottom-grid animated wow slideInLeft" data-wow-delay=".8s">
+					<div class="about-bottom-grid1">
+						<img src="images/5.png" alt=" " class="img-responsive" />
+						<h4>Michael Smith</h4>
+						<p>Voluptas sit consequuntur magni dolores magnam aliquam quaerat.</p>
+						<ul class="social">
+							<li><a class="social-linkedin" href="#">
+								<i></i>
+								<div class="tooltip"><span>Facebook</span></div>
+								</a></li>
+							<li><a class="social-twitter" href="#">
+								<i></i>
+								<div class="tooltip"><span>Twitter</span></div>
+								</a></li>
+							<li><a class="social-google" href="#">
+								<i></i>
+								<div class="tooltip"><span>Google+</span></div>
+								</a></li>
+						</ul>
+ 					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //about-bottom -->
+<!-- testimonials -->
+	<div class="testimonials">
+		<div class="container">
+			<h3 class="animated wow zoomIn" data-wow-delay=".5s">Sheep Farm<span>Testimonials</span></h3>
+			<div class="testimonials-grids">
+				<div class="col-md-6 testimonials-grid animated wow slideInLeft" data-wow-delay=".5s">
+					<div class="testimonials-grid1">
+						<img src="images/3.png" alt=" " class="img-responsive" />
+						<p>Chris Won</p>
+					</div>
+					<div class="testimonials-grid2">
+						<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis 
+							suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur
+							quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+					</div>
+				</div>
+				<div class="col-md-6 testimonials-grid animated wow slideInRight" data-wow-delay=".5s">
+					<div class="testimonials-grid1">
+						<img src="images/4.png" alt=" " class="img-responsive" />
+						<p>James Alley</p>
+					</div>
+					<div class="testimonials-grid2">
+						<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis 
+							suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur
+							quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //testimonials -->
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".5s">
+				<h2><a href="index.html">Fleece<span>sheep farm</span></a></h2>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+					nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+					deserunt mollit anim id est laborum.</p>
+				<ul class="social">
+					<li>Share on:</li>
+					<li><a class="social-linkedin" href="#">
+						<i></i>
+						<div class="tooltip"><span>Facebook</span></div>
+						</a></li>
+					<li><a class="social-twitter" href="#">
+						<i></i>
+						<div class="tooltip"><span>Twitter</span></div>
+						</a></li>
+					<li><a class="social-google" href="#">
+						<i></i>
+						<div class="tooltip"><span>Google+</span></div>
+						</a></li>
+					<li><a class="social-facebook" href="#">
+						<i></i>
+						<div class="tooltip"><span>Pinterest</span></div>
+						</a></li>
+					<li><a class="social-instagram" href="#">
+						<i></i>
+						<div class="tooltip"><span>Instagram</span></div>
+						</a></li>
+				</ul>
+				<div class="newsletter">
+					<form>
+						<input type="email" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}" required="">
+						<input type="submit" value="Subscribe">
+					</form>
+				</div>
+			</div>
+			<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".6s">
+				<h3>instagram posts</h3>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/8.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/10.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/11.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/12.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/8.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="footer-grid-left">
+					<a href="single.html"><img src="images/10.jpg" alt=" " class="img-responsive" /></a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-4 footer-grid animated wow slideInLeft" data-wow-delay=".7s">
+				<h3>Contact Info</h3>
+				<ul class="footer-address">
+					<li><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 738 Diamond Road, New York City, USA.</li>
+					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li>
+					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> +7683 928 829</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="footer-copy">
+		<div class="container">
+			<p class="animated wow slideInLeft" data-wow-delay=".5s">Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>

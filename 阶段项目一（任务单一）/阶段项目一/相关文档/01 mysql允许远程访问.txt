@@ -1,0 +1,19 @@
+启动mysql 远程服务打开：
+进入mysql command:
+mysql: 输入密码
+mysql> use mysql;
+
+mysql> select host,user from user;
+查看结果是不是root用户仅允许本地（localhost）登录,
+------------------------
+
+host      |	user
+
+localhost |   root
+--------------------------
+若是的话,就要修改它的host为%,表示任意IP地址都可以登录.
+
+mysql> update user set host = '%' where user = 'root';
+mysql> flush privileges;
+把缓存flush掉.在使用update语句修改用户记录后，需要FLUSH语句告诉服务器重载授权表.
+就OK了。
